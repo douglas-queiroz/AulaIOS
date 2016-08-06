@@ -19,6 +19,10 @@
 		CB0E71C71D561A350065BB28 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E71C61D561A350065BB28 /* Cliente.swift */; };
 		CB0E71C91D561A7A0065BB28 /* FormaPagamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E71C81D561A7A0065BB28 /* FormaPagamento.swift */; };
 		CB0E71CB1D561BCE0065BB28 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E71CA1D561BCE0065BB28 /* Model.swift */; };
+		CB0E71CF1D5625370065BB28 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E71CD1D5625370065BB28 /* HomeViewController.swift */; };
+		CB0E71D01D5625370065BB28 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB0E71CE1D5625370065BB28 /* HomeViewController.xib */; };
+		CB0E71D31D5631E90065BB28 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E71D11D5631E90065BB28 /* FormViewController.swift */; };
+		CB0E71D41D5631E90065BB28 /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB0E71D21D5631E90065BB28 /* FormViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		CB0E71C61D561A350065BB28 /* Cliente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
 		CB0E71C81D561A7A0065BB28 /* FormaPagamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormaPagamento.swift; sourceTree = "<group>"; };
 		CB0E71CA1D561BCE0065BB28 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CB0E71CD1D5625370065BB28 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CB0E71CE1D5625370065BB28 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		CB0E71D11D5631E90065BB28 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		CB0E71D21D5631E90065BB28 /* FormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 		CB0E71921D56190B0065BB28 /* SaleForce */ = {
 			isa = PBXGroup;
 			children = (
+				CB0E71CC1D5624950065BB28 /* view */,
 				CB0E71C11D5619750065BB28 /* model */,
 				CB0E71931D56190B0065BB28 /* AppDelegate.swift */,
 				CB0E71951D56190B0065BB28 /* ViewController.swift */,
@@ -146,6 +155,17 @@
 				CB0E71CA1D561BCE0065BB28 /* Model.swift */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		CB0E71CC1D5624950065BB28 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CB0E71CD1D5625370065BB28 /* HomeViewController.swift */,
+				CB0E71CE1D5625370065BB28 /* HomeViewController.xib */,
+				CB0E71D11D5631E90065BB28 /* FormViewController.swift */,
+				CB0E71D21D5631E90065BB28 /* FormViewController.xib */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +275,8 @@
 				CB0E719E1D56190B0065BB28 /* LaunchScreen.storyboard in Resources */,
 				CB0E719B1D56190B0065BB28 /* Assets.xcassets in Resources */,
 				CB0E71991D56190B0065BB28 /* Main.storyboard in Resources */,
+				CB0E71D41D5631E90065BB28 /* FormViewController.xib in Resources */,
+				CB0E71D01D5625370065BB28 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0E71D31D5631E90065BB28 /* FormViewController.swift in Sources */,
 				CB0E71CB1D561BCE0065BB28 /* Model.swift in Sources */,
 				CB0E71C91D561A7A0065BB28 /* FormaPagamento.swift in Sources */,
 				CB0E71C51D561A030065BB28 /* User.swift in Sources */,
+				CB0E71CF1D5625370065BB28 /* HomeViewController.swift in Sources */,
 				CB0E71961D56190B0065BB28 /* ViewController.swift in Sources */,
 				CB0E71C31D5619A70065BB28 /* Pessoa.swift in Sources */,
 				CB0E71941D56190B0065BB28 /* AppDelegate.swift in Sources */,
