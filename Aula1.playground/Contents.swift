@@ -148,3 +148,7 @@ switch switchCaseString {
 
 
 // https://developer.apple.com/swift/
+
+
+let tempo = 2.0
+tempo.description
