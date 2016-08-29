@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -39,6 +40,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentify)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        HUD.show(.Progress)
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+            sleep(3)
+            HUD.hide()
+        } )
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
